@@ -1,8 +1,8 @@
 package com.example.lovishverma.transitnow;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -13,7 +13,7 @@ public class SplashActivity extends AppCompatActivity {
         Thread t = new Thread() {
             public void run() {
                 try {
-                    sleep(5000);
+                    sleep(6000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 } finally {
