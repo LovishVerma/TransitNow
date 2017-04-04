@@ -1,38 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.lovishverma.transitnow.HomeActivity"
-    android:background="@color/white1">
+    android:background="@color/white1"
+    tools:context="com.example.lovishverma.transitnow.MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="261dp"
+        android:layout_height="80dp"
+        android:layout_weight="1"
         app:srcCompat="@drawable/are_you" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        android:layout_weight="4">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/driver_icon1" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="184dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/driver" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/taxi_passanger" />
-    </LinearLayout>
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageButton"
+        app:srcCompat="@drawable/passenger_icon1" />
 
 
-</LinearLayout>
+</RelativeLayout>
